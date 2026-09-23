@@ -483,6 +483,8 @@ function ProductImage({ product, className, style, emojiSize }) {
       <img
         src={src}
         alt={product.name}
+        loading="lazy"
+        decoding="async"
         onError={() => setError(true)}
         style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
       />
